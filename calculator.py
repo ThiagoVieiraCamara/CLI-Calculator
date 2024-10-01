@@ -1,6 +1,6 @@
 import typer
 from rich import print as println
-from typing_extensions import Annotated, Callable
+from typing_extensions import Annotated
 
 def calculator(a: Annotated[float, typer.Argument(help="1st value", show_default=False)],
                 b: Annotated[float, typer.Argument(help="2nd value", show_default=False)],
